@@ -22,6 +22,8 @@
 		C6213D2B18F60CFC00921DBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6213D0A18F60CFC00921DBA /* UIKit.framework */; };
 		C6213D3318F60CFC00921DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6213D3118F60CFC00921DBA /* InfoPlist.strings */; };
 		C6213D3518F60CFC00921DBA /* travelingAloneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6213D3418F60CFC00921DBA /* travelingAloneTests.m */; };
+		C6213D3F18F6126E00921DBA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6213D3E18F6126E00921DBA /* MapKit.framework */; };
+		C6213D4218F617AE00921DBA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C6213D4118F617AE00921DBA /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		C6213D3018F60CFC00921DBA /* travelingAloneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "travelingAloneTests-Info.plist"; sourceTree = "<group>"; };
 		C6213D3218F60CFC00921DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6213D3418F60CFC00921DBA /* travelingAloneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = travelingAloneTests.m; sourceTree = "<group>"; };
+		C6213D3E18F6126E00921DBA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C6213D4018F617AE00921DBA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		C6213D4118F617AE00921DBA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6213D3F18F6126E00921DBA /* MapKit.framework in Frameworks */,
 				C6213D0918F60CFC00921DBA /* CoreGraphics.framework in Frameworks */,
 				C6213D0B18F60CFC00921DBA /* UIKit.framework in Frameworks */,
 				C6213D0718F60CFC00921DBA /* Foundation.framework in Frameworks */,
@@ -104,6 +110,7 @@
 		C6213D0518F60CFC00921DBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6213D3E18F6126E00921DBA /* MapKit.framework */,
 				C6213D0618F60CFC00921DBA /* Foundation.framework */,
 				C6213D0818F60CFC00921DBA /* CoreGraphics.framework */,
 				C6213D0A18F60CFC00921DBA /* UIKit.framework */,
@@ -124,6 +131,8 @@
 				C6213D1F18F60CFC00921DBA /* SecondViewController.m */,
 				C6213D2118F60CFC00921DBA /* Images.xcassets */,
 				C6213D0D18F60CFC00921DBA /* Supporting Files */,
+				C6213D4018F617AE00921DBA /* Person.h */,
+				C6213D4118F617AE00921DBA /* Person.m */,
 			);
 			path = travelingAlone;
 			sourceTree = "<group>";
@@ -256,6 +265,7 @@
 			files = (
 				C6213D2018F60CFC00921DBA /* SecondViewController.m in Sources */,
 				C6213D1718F60CFC00921DBA /* AppDelegate.m in Sources */,
+				C6213D4218F617AE00921DBA /* Person.m in Sources */,
 				C6213D1D18F60CFC00921DBA /* FirstViewController.m in Sources */,
 				C6213D1318F60CFC00921DBA /* main.m in Sources */,
 			);
@@ -382,10 +392,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "travelingAlone/travelingAlone-Prefix.pch";
 				INFOPLIST_FILE = "travelingAlone/travelingAlone-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,10 +407,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "travelingAlone/travelingAlone-Prefix.pch";
 				INFOPLIST_FILE = "travelingAlone/travelingAlone-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
