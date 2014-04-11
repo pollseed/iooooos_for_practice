@@ -1,7 +1,24 @@
 
 
 #import "Person.h"
+
+// private空間
+// interface部分に書かずにここで囲う.
+#import <Foundation/Foundation.h>
+@interface Person()
+@property (nonatomic) NSInteger age;
+- (void)displayName;
+- (void)displayAge;
+@end
+
+
 @implementation Person
+
+- (void)displayProfile
+{
+    // 自分クラスのname, ageにアクセス.
+    NSLog(@"my name is %@. my age is %d.", self.name, self.age);
+}
 
 //- (NSString *)name
 //{
@@ -22,6 +39,5 @@
 //{
 //    _age = age;
 //}
-
 
 @end

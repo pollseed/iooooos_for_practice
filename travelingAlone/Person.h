@@ -19,7 +19,9 @@
 
 // オートアクセサ
 @property (nonatomic) NSString *name;
+@property (nonatomic) Person *guardianSpirit;
 
-@property (nonatomic) NSInteger age;
+// インスタンスメソッド
+- (void)displayProfile;
 
 @end
